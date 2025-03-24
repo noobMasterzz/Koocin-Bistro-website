@@ -13,15 +13,6 @@ function Footer() {
         </div>
         
         <div className="footer-section">
-          <h3>Quick Links</h3>
-          <Link to="/" className="footer-link">Home</Link>
-          <Link to="/menu" className="footer-link">Menu</Link>
-          <Link to="/about" className="footer-link">About Us</Link>
-          <Link to="/gallery" className="footer-link">Gallery</Link>
-          <Link to="/contact" className="footer-link">Contact</Link>
-        </div>
-        
-        <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-links">
             <a href="https://www.facebook.com/Koosina" target="_blank" rel="noopener noreferrer" className="social-link">Facebook</a>
@@ -32,7 +23,7 @@ function Footer() {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy;Koocina Bistro. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Koocina Bistro. All rights reserved.</p>
       </div>
     </footer>
   );
