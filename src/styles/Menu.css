@@ -104,6 +104,7 @@
   width: 40px;
   height: 40px;
   z-index: 1;
+  background: transparent;
 }
 
 .slick-prev {
@@ -117,7 +118,14 @@
 .slick-prev:before,
 .slick-next:before {
   font-size: 40px;
-  color: black
+  color: #000000 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: #000000 !important;
 }
 
 .slick-dots {
@@ -176,5 +184,6 @@
   .slick-prev:before,
   .slick-next:before {
     font-size: 30px;
+    color: #000000 !important;
   }
 } 
