@@ -1,6 +1,6 @@
 .menu-page {
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -21,7 +21,8 @@
 }
 
 .menu-section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
 }
 
 .menu-section h2 {
@@ -32,10 +33,8 @@
   padding-bottom: 0.5rem;
 }
 
-.menu-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+.menu-item-wrapper {
+  padding: 1rem;
 }
 
 .menu-item {
@@ -44,6 +43,7 @@
   overflow: hidden;
   transition: transform 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 
 .menu-item:hover {
@@ -96,17 +96,57 @@
   margin: 0;
 }
 
+/* Carousel Custom Styling */
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  color: black
+}
+
+.slick-dots {
+  bottom: -35px;
+}
+
+.slick-dots li button:before {
+  color: var(--text-primary);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--text-primary);
+}
+
+@media (max-width: 1200px) {
+  .slick-prev {
+    left: -30px;
+  }
+
+  .slick-next {
+    right: -30px;
+  }
+}
+
 @media (max-width: 768px) {
   .menu-page {
     padding: 1rem;
   }
 
-  .menu-items {
-    grid-template-columns: 1fr;
-  }
-
-  .menu-item-image {
-    height: 180px;
+  .menu-section {
+    padding: 0;
   }
 
   .menu-header h1 {
@@ -115,5 +155,24 @@
 
   .menu-section h2 {
     font-size: 1.75rem;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slick-prev {
+    left: -15px;
+  }
+
+  .slick-next {
+    right: -15px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px;
   }
 } 
