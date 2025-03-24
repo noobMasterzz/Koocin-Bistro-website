@@ -9,7 +9,7 @@ function ScrollToTopOnMount() {
       if (typeof window !== 'undefined') {
         window.scrollTo({
           top: 0,
-          behavior: 'instant' // Use 'instant' instead of 'smooth' for immediate scroll on page change
+          behavior: 'instant'
         });
       }
     } catch (error) {

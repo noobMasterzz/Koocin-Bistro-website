@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/ErrorBoundary.css';
 
 class ErrorBoundary extends React.Component {
@@ -21,8 +22,8 @@ class ErrorBoundary extends React.Component {
         <div className="error-container">
           <h1>Something went wrong</h1>
           <p>We apologize for the inconvenience. Please try refreshing the page.</p>
-          <button onClick={() => window.location.reload()}>
-            Refresh Page
+          <button onClick={() => window.location.href = '/'}>
+            Return to Home
           </button>
         </div>
       );
