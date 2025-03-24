@@ -1,4 +1,8 @@
 import '../styles/About.css';
+import OwnerPic from '../assets/about-images/owner-image.jpg';
+import ChefPic from '../assets/about-images/dahlin bee.jpg';
+import ManagerPic from '../assets/about-images/isay.jpg';
+
 
 function About() {
   return (
@@ -13,7 +17,7 @@ function About() {
           <div className="content-wrapper">
             <h2>Our Story</h2>
             <p>
-              Founded in 2020, Koocina Bistro emerged from a passion for creating exceptional dining experiences. 
+              Founded in 2024, Koocina Bistro emerged from a passion for creating exceptional dining experiences. 
               What started as a small family dream has blossomed into one of the most beloved restaurants in the area.
             </p>
             <p>
@@ -22,7 +26,7 @@ function About() {
             </p>
           </div>
           <div className="image-wrapper story-image">
-            {/* Add your restaurant image here */}
+            <img src={OwnerPic} alt="Owner" />
           </div>
         </section>
 
@@ -49,19 +53,19 @@ function About() {
           <div className="team-grid">
             <div className="team-member">
               <div className="member-image chef-image">
-                {/* Add chef image here */}
+                <img src={ChefPic} alt="Chef" />
               </div>
-              <h3>Chef Maria Santos</h3>
+              <h3>Dahlin Bee</h3>
               <p className="role">Executive Chef</p>
-              <p>With over 15 years of culinary experience, Chef Maria brings creativity and expertise to every dish.</p>
+              <p>With over 15 years of culinary experience, Chef Dahlin brings creativity and expertise to every dish.</p>
             </div>
             <div className="team-member">
               <div className="member-image manager-image">
-                {/* Add manager image here */}
+                <img src={ManagerPic} alt="Manager" />
               </div>
-              <h3>John Rivera</h3>
+              <h3>Isabella</h3>
               <p className="role">Restaurant Manager</p>
-              <p>John ensures that every visit to Koocina Bistro exceeds our guests' expectations.</p>
+              <p>Isabella ensures that every visit to Koocina Bistro exceeds our guests' expectations.</p>
             </div>
           </div>
         </section>

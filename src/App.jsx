@@ -6,12 +6,15 @@ import Menu from './pages/Menu';
 import About from './pages/About';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
+import ScrollToTopOnMount from './components/ScrollToTopOnMount';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="app">
+        <ScrollToTopOnMount />
         <Navbar />
         <main className="main-content">
           <Routes>
@@ -23,6 +26,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <ScrollToTop />
       </div>
     </Router>
   );

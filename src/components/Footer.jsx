@@ -9,7 +9,7 @@ function Footer() {
           <h3>Contact Us</h3>
           <p>📞 Phone: (123) 456-7890</p>
           <p>📧 Email: info@koocinabistro.com</p>
-          <p>📍 Address: 123 Restaurant Street, Foodie City</p>
+          <p>📍 131 Fernando Poe Jr. Avenue San Francisco del Monte, Quezon City, Philippines</p>
         </div>
         
         <div className="footer-section">
