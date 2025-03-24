@@ -32,7 +32,7 @@ function Footer() {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; 2024 Koocina Bistro. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Koocina Bistro. All rights reserved.</p>
       </div>
     </footer>
   );
