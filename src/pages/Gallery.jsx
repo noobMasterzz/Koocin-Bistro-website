@@ -1,67 +1,68 @@
 import { useState } from 'react';
 import '../styles/Gallery.css';
+import Gallery1 from '../assets/gallery-images/main dining area1.jpg';
+import Gallery2 from '../assets/gallery-images/lechon belly.jpg';
+import Gallery3 from '../assets/gallery-images/main dining area2.jpg';
+import Gallery4 from '../assets/gallery-images/seafood.jpg';
+import Gallery5 from '../assets/gallery-images/partyEvent.jpg';
+import Gallery6 from '../assets/gallery-images/dessert.jpg';
+import Gallery7 from '../assets/gallery-images/bday.jpg';
+import Gallery8 from '../assets/gallery-images/chefs-special.jpg';
 
 const galleryItems = [
   {
     id: 1,
     category: 'interior',
-    image: '/gallery/interior-1.jpg',
+    image: Gallery1,
     title: 'Main Dining Area',
     description: 'Our spacious and elegant main dining room'
   },
   {
     id: 2,
     category: 'food',
-    image: '/gallery/dish-1.jpg',
-    title: 'Signature Steak',
-    description: 'Premium cut beef with seasonal vegetables'
+    image: Gallery2,
+    title: 'Lechon Belly',
+    description: 'Premium Lechon Belly with tender skin and juicy meat'
   },
   {
     id: 3,
     category: 'interior',
-    image: '/gallery/interior-2.jpg',
+    image: Gallery3,
     title: 'Private Dining Room',
     description: 'Perfect for intimate gatherings and special occasions'
   },
   {
     id: 4,
     category: 'food',
-    image: '/gallery/dish-2.jpg',
+    image: Gallery4,
     title: 'Fresh Seafood Platter',
     description: 'A selection of the day\'s freshest seafood'
   },
   {
     id: 5,
     category: 'events',
-    image: '/gallery/event-1.jpg',
-    title: 'Corporate Events',
-    description: 'Hosting a successful business dinner'
+    image: Gallery5,
+    title: 'Party Events',
+    description: 'Hosting a successful party dinner'
   },
   {
     id: 6,
     category: 'food',
-    image: '/gallery/dish-3.jpg',
+    image: Gallery6,
     title: 'Dessert Selection',
     description: 'Handcrafted desserts made fresh daily'
   },
   {
     id: 7,
     category: 'events',
-    image: '/gallery/event-2.jpg',
-    title: 'Wedding Reception',
-    description: 'Celebrating special moments with loved ones'
+    image: Gallery7,
+    title: 'Birthday',
+    description: 'Celebrating birthday with your loved ones'
   },
   {
     id: 8,
-    category: 'interior',
-    image: '/gallery/interior-3.jpg',
-    title: 'Bar Area',
-    description: 'Extensive selection of wines and craft cocktails'
-  },
-  {
-    id: 9,
     category: 'food',
-    image: '/gallery/dish-4.jpg',
+    image: Gallery8,
     title: 'Chef\'s Special',
     description: 'Seasonal tasting menu highlights'
   }
