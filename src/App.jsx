@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Suspense, lazy, useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -52,7 +52,6 @@ const RouteWrapper = ({ children }) => {
 function App() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
   const [error, setError] = useState(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     // Handle initial loading
@@ -83,10 +82,10 @@ function App() {
         <h2>Something went wrong</h2>
         <p>Please try refreshing the page</p>
         <button 
-          onClick={() => navigate('/')}
+          onClick={() => window.location.reload()}
           className="retry-button"
         >
-          Return to Home
+          Retry
         </button>
       </div>
     );
