@@ -16,8 +16,8 @@ function Footer() {
           <h3>Follow Us</h3>
           <div className="social-links">
             <a href="https://www.facebook.com/Koosina" target="_blank" rel="noopener noreferrer" className="social-link">Facebook</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">Instagram</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">Tiktok</a>
+            <a href="https://www.instagram.com/koocinabistro/" target="_blank" rel="noopener noreferrer" className="social-link">Instagram</a>
+            <a href="https://www.tiktok.com/@koocinabistro" target="_blank" rel="noopener noreferrer" className="social-link">Tiktok</a>
           </div>
         </div>
       </div>
