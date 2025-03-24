@@ -1,14 +1,25 @@
+import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
 import HomeBg from '../assets/Home bg photo.jpg';
 
 function Home() {
+  const navigate = useNavigate();
+
+  const handleMenuClick = () => {
+    navigate('/menu');
+  };
+
+  const handleAboutClick = () => {
+    navigate('/about');
+  };
+
   return (
     <div className="home">
       <section className="hero" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${HomeBg})` }}>
         <div className="hero-content">
           <h1>Welcome to Koocina Bistro</h1>
           <p>At Koocina Bistro, we blend tradition with innovation to create culinary masterpieces. Indulge in the extraordinary.</p>
-          <button className="cta-button" onClick={() => window.location.href='/menu'}>
+          <button className="cta-button" onClick={handleMenuClick}>
             View Our Menu
           </button>
         </div>
@@ -35,7 +46,7 @@ function Home() {
           At Koocina Bistro, we believe in creating memorable dining experiences through 
           exceptional food, warm hospitality, and a welcoming atmosphere.
         </p>
-        <button className="secondary-button" onClick={() => window.location.href='/about'}>
+        <button className="secondary-button" onClick={handleAboutClick}>
           Learn More
         </button>
       </section>
